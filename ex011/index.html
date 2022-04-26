@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="example.html" method="post">
+        <label for="nick">nickname: </label>
+        <input type="text" name="nickname" id="nick" required minlength="3">
+        <br>
+        <label for="mail">E-Mail:</label>
+        <input type="email" name="mail" id="mail" required>
+        <br>
+        <label for="pass">password: </label>
+        <input type="password" name="password" id="pass" required minlength="6" maxlength="10">
+        <br>
+        <label for="age">age: </label>
+        <input type="number" name="yourage" id="age" step="1" required min="0" max="120">
+        <br>
+        <label for="happy">level of happiness: </label>
+        <input type="range" name="level" id="happy" min="0" max="5" step="1">
+        <br>
+        <p>Your likes:</p>
+        <label for="music">Music</label>
+        <input type="checkbox" id="music" name="likes" value="music">
+        <label for="read">Reading</label>
+        <input type="checkbox" id="read" name="likes" value="reading">
+        <label for="dance">Dancing</label>
+        <input type="checkbox" id="dance" name="likes" value="dancing">
+        <label for="sleep">Sleeping</label>
+        <input type="checkbox" id="sleep" name="likes" value="sleeping">
+        <br>
+        <p>Sex:</p>
+        <input type="radio" id="fem" name="sex" value="fem">
+        <label for="fem">Fem</label>
+        <input type="radio" id="masc" name="sex" value="masc">
+        <label for="fem">Masc</label>
+        <input type="radio" id="other" name="sex" value="other">
+        <label for="other">Other</label>
+        <br>
+        <label for="status">Status:</label>
+        <select name="stat" id="status">
+            <option value="">Choose your Status:</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="widow">Widow</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="lives">Lives in:</label>
+        <input type="text" list="cities" id="city" name="city" value="City">
+        <datalist id="cities">
+            <option value="Lisbon"></option>
+            <option value="Porto"></option>
+            <option value="Braga"></option>
+            <option value="Coimbra"></option>
+        </datalist>
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

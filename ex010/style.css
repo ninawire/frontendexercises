@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#mainDiv {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+}
+
+#test {
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
