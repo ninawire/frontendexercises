@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+#change {
+    width: 300px;
+    height: 300px;
+    margin: 80px auto;
+    position: relative;
+    background-color: red;
+    animation: change 1s ease-out 1s, 
+               fall 0.5s ease-in 2s 5 alternate;
+    animation-fill-mode: forwards;
+}
+
+/*animation shorthand: name duration timing delay iteration direction*/
+
+@keyframes fall {
+    from { transform: translatey(0);}
+    to { transform: translatey(545px);}
+}
+
+@keyframes change {
+    from { border-radius: 0;}
+    to { border-radius: 50%;}
+    from { background-color: red}
+    to { background-color: blue;}
+}
